@@ -1,0 +1,135 @@
+/* Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #f5f5f5;
+    --accent-color: #009688;
+    --font-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    margin-top: 5rem;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#about, #projects, #contact {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input, textarea, button {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00796b;
+}
